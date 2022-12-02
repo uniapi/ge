@@ -1,0 +1,147 @@
+'\" te
+.\" بسم الله
+.\" Copyright (c) 2022, Asserter, Org. All Rights Reserved.
+.TH ge_all_ex 3c "2 Dec 2022" "SunOS 5.11" "C Library Functions"
+.SH NAME
+ge_all_ex \- generate all exclusively
+.SH SYNOPSIS
+.LP
+.nf
+#include <ge.h>
+
+\fBchar\fR \fBge_char_ex\fR();
+.fi
+
+.LP
+.nf
+\fBshort\fR \fBge_shrt_ex\fR();
+.fi
+
+.LP
+.nf
+\fBint\fR \fBge_int_ex\fR();
+.fi
+
+.LP
+.nf
+\fBlong\fR \fBge_long_ex\fR();
+.fi
+
+.LP
+.nf
+\fBlong long\fR \fBge_llong_ex\fR();
+.fi
+
+.LP
+.nf
+\fBunsigned char\fR \fBge_uchar_ex\fR();
+.fi
+
+.LP
+.nf
+\fBunsigned short\fR \fBge_ushrt_ex\fR();
+.fi
+
+.LP
+.nf
+\fBunsigned int\fR \fBge_uint_ex\fR();
+.fi
+
+.LP
+.nf
+\fBunsigned long\fR \fBge_ulong_ex\fR();
+.fi
+
+.LP
+.nf
+\fBunsigned long long\fR \fBge_ullong_ex\fR();
+.fi
+
+.SH DESCRIPTION
+.sp
+.LP
+The \fBge_char_all_ex()\fR function generates a char value in all the \fICHAR_MIN\fR and \fICHAR_MAX\fR range excluding \fIex\fR.
+
+.sp
+.LP
+The \fBge_shrt_all_ex()\fR function generates a short value in all the \fISHRT_MIN\fR and \fISHORT_MAX\fR range excluding \fIex\fR.
+.sp
+
+.sp
+.LP
+The \fBge_int_all_ex()\fR function generates an int value in all the \fIINT_MIN\fR and \fIINT_MAX\fR range excluding \fIex\fR.
+.sp
+
+.sp
+.LP
+The \fBge_long_all_ex()\fR function generates a value in all the \fILONG_MIN\fR and \fILONG_MAX\fR range excluding \fIex\fR.
+.sp
+
+.sp
+.LP
+The \fBge_llong_all_ex()\fR function generates a long long value in all the \fILLONG_MIN\fR and \fILLONG_MAX\fR range excluding \fIex\fR.
+.sp
+
+.sp
+.LP
+The \fBge_uchar_all_ex()\fR function generates an unsigned char value in all the \fI0\fR and \fIUCHAR_MAX\fR range excluding \fIex\fR.
+.sp
+
+.sp
+.LP
+The \fBge_ushrt_all_ex()\fR function generates an unsigned short value in all the \fI0\fR and \fIUSHRT_MAX\fR range excluding \fIex\fR.
+.sp
+
+.sp
+.LP
+The \fBge_uint_all_ex()\fR function generates an unsigned int value in all the \fI0\fR and \fIUINT_MAX\fR range excluding \fIex\fR.
+.sp
+
+.sp
+.LP
+The \fBge_ulong_all_ex()\fR function generates an unsigned long value in all the \fI0\fR and \fIULONG_MAX\fR range excluding \fIex\fR.
+.sp
+
+.sp
+.LP
+The \fBge_ullong_all_ex()\fR function generates an unsigned long long value in all the \fI0\fR and \fIULLONG_MAX\fR range excluding \fIex\fR.
+.sp
+
+.SH RETURN VALUES
+.sp
+.LP
+The family of ge_all_ex() functions is considered to be always successfull and the functions return generated values described above.
+
+.SH ATTRIBUTES
+.sp
+.LP
+See \fBattributes\fR(5) for descriptions of the following attributes:
+.sp
+
+.sp
+.TS
+tab(@) box;
+cw(2.75i) |cw(2.75i)
+lw(2.75i) |lw(2.75i)
+.
+ATTRIBUTE TYPE@ATTRIBUTE VALUE
+_
+Interface Stability@Committed
+_
+MT-Level@Safe
+_
+Standard@None
+.TE
+
+.SH SEE ALSO
+.sp
+.LP
+\fBge_all\fR(3C), \fBge\fR(3C), \fBge_ex\fR(3C)
+
+.SH AUTHOR
+Maintained by Ali Muhammed <uniapi@outlook.com>
+.SH COPYRIGHT
+Copyright (c) 2022 Asserter, Org.
+.PP
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the Open Software License ("\s-1OSL\s0"), Version 3.0
