@@ -1,0 +1,152 @@
+'\" te
+.\" بسم الله
+.\" Copyright (c) 2022, Asserter, Org. All Rights Reserved.
+.TH ge 3c "1 Dec 2022" "SunOS 5.11" "C Library Functions"
+.SH NAME
+ge \- generate
+.SH SYNOPSIS
+.LP
+.nf
+#include <ge.h>
+
+\fBchar\fR \fBge_char\fR(\fBchar\fR \fImin\fR, \fBchar\fR \fImax\fR);
+.fi
+
+.LP
+.nf
+\fBshort\fR \fBge_shrt\fR(\fBshort\fR \fImin\fR, \fBshort\fR \fImax\fR);
+.fi
+
+.LP
+.nf
+\fBint\fR \fBge_int\fR(\fBint\fR \fImin\fR, \fBint\fR \fImax\fR);
+.fi
+
+.LP
+.nf
+\fBlong\fR \fBge_long\fR(\fBlong\fR \fImin\fR, \fBint\fR \fImax\fR);
+.fi
+
+.LP
+.nf
+\fBlong long\fR \fBge_llong\fR(\fBlong long\fR \fImin\fR, \fBlong long\fR \fImax\fR);
+.fi
+
+.LP
+.nf
+\fBunsigned char\fR \fBge_uchar\fR(\fBunsigned char\fR \fImin\fR, \fBunsigned char\fR \fImax\fR);
+.fi
+
+.LP
+.nf
+\fBunsigned short\fR \fBge_ushrt\fR(\fBunsigned short\fR \fImin\fR, \fBunsigned short\fR \fImax\fR);
+.fi
+
+.LP
+.nf
+\fBunsigned int\fR \fBge_uint\fR(\fBunsigned int\fR \fImin\fR, \fBunsigned int\fR \fImax\fR);
+.fi
+
+.LP
+.nf
+\fBunsigned long\fR \fBge_ulong\fR(\fBunsigned long\fR \fImin\fR, \fBunsigned long\fR \fImax\fR);
+.fi
+
+.LP
+.nf
+\fBunsigned long long\fR \fBge_ullong\fR(\fBunsigned long long\fR \fImin\fR, \fBunsigned long long\fR \fImax\fR);
+.fi
+
+.SH DESCRIPTION
+.sp
+.LP
+The \fBge_char()\fR function generates a char value of the range \fImin\fR and \fImax\fR.
+
+.sp
+.LP
+The \fBge_shrt()\fR function generates a short value of the range \fImin\fR and \fImax\fR.
+.sp
+
+.sp
+.LP
+The \fBge_int()\fR function generates an int value of the range \fImin\fR and \fImax\fR.
+.sp
+
+.sp
+.LP
+The \fBge_long()\fR function generates a long value of the range \fImin\fR and \fImax\fR.
+.sp
+
+.sp
+.LP
+The \fBge_llong()\fR function generates a long long value of the range \fImin\fR and \fImax\fR.
+.sp
+
+.sp
+.LP
+The \fBge_uchar()\fR function generates an unsigned char value of the range \fImin\fR and \fImax\fR.
+.sp
+
+.sp
+.LP
+The \fBge_ushrt()\fR function generates an unsigned short value of the range \fImin\fR and \fImax\fR.
+.sp
+
+.sp
+.LP
+The \fBge_uint()\fR function generates an unsigned int value of the range \fmin\fR and \fImax\fR.
+.sp
+
+.sp
+.LP
+The \fBge_ulong()\fR function generates an unsigned long value of the range \fImin\fR and \fImax\fR.
+.sp
+
+.sp
+.LP
+The \fBge_ullong()\fR function generates an unsigned long long value of the \fImin\fR and \fImax\fR range.
+.sp
+
+.SH RETURN VALUES
+.sp
+.LP
+The family of ge() functions is considered to be always successfull and the functions return generated values described above.
+
+.SH ATTRIBUTES
+.sp
+.LP
+See \fBattributes\fR(5) for descriptions of the following attributes:
+.sp
+
+.sp
+.TS
+tab(@) box;
+cw(2.75i) |cw(2.75i)
+lw(2.75i) |lw(2.75i)
+.
+ATTRIBUTE TYPE@ATTRIBUTE VALUE
+_
+Interface Stability@Committed
+_
+MT-Level@Safe
+_
+Standard@None
+.TE
+
+.SH SEE ALSO
+.sp
+.LP
+\fBge_ex\fR(3C), \fBge_all\fR(3C), \fBge_all_ex\fR(3C)
+
+.SH NOTES
+.sp
+.LP
+Passing a value to \fImin\fR greater than \fImax\fR is Undefined Behaviour.
+
+.SH AUTHOR
+Maintained by Ali Muhammed <uniapi@outlook.com>
+.SH COPYRIGHT
+Copyright (c) 2022 Asserter, Org.
+.PP
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the Open Software License ("\s-1OSL\s0"), Version 3.0
